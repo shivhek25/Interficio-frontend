@@ -8,11 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var register_service_1 = require("../register.service");
-var LoginComponent = /** @class */ (function () {
+var LoginComponent = (function () {
     function LoginComponent(router, registerService) {
         this.router = router;
         this.registerService = registerService;
@@ -26,7 +25,6 @@ var LoginComponent = /** @class */ (function () {
                 xfbml: true,
                 // Parse social plugins on this page
                 version: 'v2.5'
-                // Use graph api version 2.5
             });
         };
         this.getInfo = function () {
@@ -106,17 +104,17 @@ var LoginComponent = /** @class */ (function () {
             _this.statusChangeCallback(response);
         });
     };
-    LoginComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'login',
-            templateUrl: './login.component.html',
-            styleUrls: ['login.component.css']
-        }),
-        __metadata("design:paramtypes", [router_1.Router,
-            register_service_1.RegisterService])
-    ], LoginComponent);
     return LoginComponent;
 }());
+LoginComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'login',
+        templateUrl: './login.component.html',
+        styleUrls: ['login.component.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router,
+        register_service_1.RegisterService])
+], LoginComponent);
 exports.LoginComponent = LoginComponent;
 //# sourceMappingURL=login.component.js.map

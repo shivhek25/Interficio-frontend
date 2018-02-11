@@ -8,12 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var config_1 = require("./config");
 require("rxjs/add/operator/toPromise");
-var RegisterService = /** @class */ (function () {
+var RegisterService = (function () {
     function RegisterService(http) {
         this.http = http;
         this.authenticateUrl = config_1.config.url + 'api/v1/register/login';
@@ -47,11 +46,11 @@ var RegisterService = /** @class */ (function () {
         })
             .catch(this.handleError);
     };
-    RegisterService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], RegisterService);
     return RegisterService;
 }());
+RegisterService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], RegisterService);
 exports.RegisterService = RegisterService;
 //# sourceMappingURL=register.service.js.map

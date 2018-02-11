@@ -1,13 +1,12 @@
-
 .image { 
-  background-image: url("src/assets/img/login11.jpg"); 
+  background-image: url("src/assets/img/login1.png"); 
   background-size: 100vw 100vh;
   background-attachment: fixed;
   height: 49em;
   overflow: hidden;
   display: block;
   padding-top: 98px;
-
+  
 } 
 
 @font-face {
@@ -17,10 +16,9 @@
 
 .name {
   font-family: 'MyWebFont', Fallback, sans-serif;
-  color: ghostwhite;
+  color: white;
   font-size: 90px;
   letter-spacing: 10px;
-  padding-left: 130px;
 }
 
 .tag {
@@ -28,13 +26,10 @@
     letter-spacing: 1px;
     font-family: 'QuesFont';
     color: rgb(221,75,57);
-    padding-left: 200px;
 }
 
 .fb{
     width: 18%;
-    
-    
 }
 
 @font-face {

@@ -8,11 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var question_service_1 = require("../question.service");
-var LeaderBoardComponent = /** @class */ (function () {
+var LeaderBoardComponent = (function () {
     function LeaderBoardComponent(router, questionService) {
         this.router = router;
         this.questionService = questionService;
@@ -39,17 +38,17 @@ var LeaderBoardComponent = /** @class */ (function () {
     LeaderBoardComponent.prototype.ngOnInit = function () {
         this.fetchUserData();
     };
-    LeaderBoardComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'leaderboard',
-            templateUrl: './leaderboard.component.html',
-            styleUrls: ['leaderboard.component.css']
-        }),
-        __metadata("design:paramtypes", [router_1.Router,
-            question_service_1.QuestionService])
-    ], LeaderBoardComponent);
     return LeaderBoardComponent;
 }());
+LeaderBoardComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'leaderboard',
+        templateUrl: './leaderboard.component.html',
+        styleUrls: ['leaderboard.component.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router,
+        question_service_1.QuestionService])
+], LeaderBoardComponent);
 exports.LeaderBoardComponent = LeaderBoardComponent;
 //# sourceMappingURL=leaderboard.component.js.map

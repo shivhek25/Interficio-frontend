@@ -8,12 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var question_service_1 = require("../question.service");
 var router_2 = require("@angular/router");
-var QuestionComponent = /** @class */ (function () {
+var QuestionComponent = (function () {
     function QuestionComponent(router, questionService, route) {
         this.router = router;
         this.questionService = questionService;
@@ -94,18 +93,18 @@ var QuestionComponent = /** @class */ (function () {
         })
             .catch(this.handleError);
     };
-    QuestionComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'question',
-            templateUrl: './question.component.html',
-            styleUrls: ['question.component.css']
-        }),
-        __metadata("design:paramtypes", [router_1.Router,
-            question_service_1.QuestionService,
-            router_2.ActivatedRoute])
-    ], QuestionComponent);
     return QuestionComponent;
 }());
+QuestionComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'question',
+        templateUrl: './question.component.html',
+        styleUrls: ['question.component.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router,
+        question_service_1.QuestionService,
+        router_2.ActivatedRoute])
+], QuestionComponent);
 exports.QuestionComponent = QuestionComponent;
 //# sourceMappingURL=question.component.js.map

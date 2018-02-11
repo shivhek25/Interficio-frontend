@@ -8,11 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var register_service_1 = require("../register.service");
-var HomeComponent = /** @class */ (function () {
+var HomeComponent = (function () {
     function HomeComponent(router, registerService) {
         this.router = router;
         this.registerService = registerService;
@@ -52,17 +51,17 @@ var HomeComponent = /** @class */ (function () {
         else
             this.header = 'Leaderboard';
     };
-    HomeComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'home',
-            templateUrl: './home.component.html',
-            styleUrls: ['home.component.css']
-        }),
-        __metadata("design:paramtypes", [router_1.Router,
-            register_service_1.RegisterService])
-    ], HomeComponent);
     return HomeComponent;
 }());
+HomeComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'home',
+        templateUrl: './home.component.html',
+        styleUrls: ['home.component.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router,
+        register_service_1.RegisterService])
+], HomeComponent);
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.component.js.map

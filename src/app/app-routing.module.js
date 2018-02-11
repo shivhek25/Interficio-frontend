@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var home_component_1 = require("./home/home.component");
 var instruction_component_1 = require("./instruction/instruction.component");
 var question_component_1 = require("./question/question.component");

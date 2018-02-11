@@ -34,9 +34,9 @@
   "devDependencies": {
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
-    "concurrently": "^3.5.1",
-    "lite-server": "^2.3.0",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
     "ng2-facebook-sdk": "^1.1.0",
-    "typescript": "^2.7.1"
+    "typescript": "^2.0.3"
   }
 }

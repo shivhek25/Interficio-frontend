@@ -8,12 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var config_1 = require("./config");
 require("rxjs/add/operator/toPromise");
-var QuestionService = /** @class */ (function () {
+var QuestionService = (function () {
     function QuestionService(http) {
         this.http = http;
         this.getSetUrl = config_1.config.url + 'api/v1/question/fetchSet';
@@ -65,11 +64,11 @@ var QuestionService = /** @class */ (function () {
             .then(function (res) { return res.json(); })
             .catch(this.handleError);
     };
-    QuestionService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], QuestionService);
     return QuestionService;
 }());
+QuestionService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], QuestionService);
 exports.QuestionService = QuestionService;
 //# sourceMappingURL=question.service.js.map

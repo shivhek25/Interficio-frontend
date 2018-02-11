@@ -8,10 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var InstructionComponent = /** @class */ (function () {
+var InstructionComponent = (function () {
     function InstructionComponent(router) {
         this.router = router;
     }
@@ -21,16 +20,16 @@ var InstructionComponent = /** @class */ (function () {
             this.router.navigate(['login']);
         }
     };
-    InstructionComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'instruction',
-            templateUrl: './instruction.component.html',
-            styleUrls: ['instruction.component.css']
-        }),
-        __metadata("design:paramtypes", [router_1.Router])
-    ], InstructionComponent);
     return InstructionComponent;
 }());
+InstructionComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'instruction',
+        templateUrl: './instruction.component.html',
+        styleUrls: ['instruction.component.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router])
+], InstructionComponent);
 exports.InstructionComponent = InstructionComponent;
 //# sourceMappingURL=instruction.component.js.map
