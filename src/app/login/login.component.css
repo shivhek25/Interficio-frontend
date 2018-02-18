@@ -1,12 +1,8 @@
 .image { 
-  background-image: url("src/assets/img/login1.png"); 
-  background-size: 100vw 100vh;
+  background-image: url("src/assets/img/login.jpg"); 
   background-attachment: fixed;
-  height: 49em;
-  overflow: hidden;
-  display: block;
-  padding-top: 98px;
-  
+  background-size: cover;
+  min-height: 1000px;
 } 
 
 @font-face {
@@ -15,9 +11,9 @@
 }
 
 .name {
-  font-family: 'MyWebFont', Fallback, sans-serif;
+  font-family: 'Game of Thrones';
   color: white;
-  font-size: 90px;
+  font-size: 55px;
   letter-spacing: 10px;
 }
 
@@ -25,23 +21,6 @@
     font-size: 32px;
     letter-spacing: 1px;
     font-family: 'QuesFont';
+    font-style: italic;
     color: rgb(221,75,57);
-}
-
-.fb{
-    width: 18%;
-}
-
-@font-face {
-  font-family: 'QuesFont';
-  src:  url('src/assets/skins/lightgray/fonts/BLKCHCRY.woff') format('woff');
-}
-
-.prize {
-  font-size: 30px;
-  position: relative;
-  color:white;
-  font-family: 'QuesFont';
-  top: 60px;
-  right: 15px;
 }
