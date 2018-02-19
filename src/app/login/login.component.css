@@ -14,6 +14,12 @@
   color: white;
   font-size: 55px;
   letter-spacing: 10px;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 4s steps(50, end),
+    blink-caret 1s step-end infinite;
 }
 
 .tag {
@@ -22,4 +28,9 @@
     font-family: 'QuesFont';
     font-style: italic;
     color: rgb(221,75,57);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
