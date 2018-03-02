@@ -33,3 +33,8 @@ background-attachment: fixed;
 overflow: hidden;
 display: block;
 }
+
+.text-center{
+  font-family: "Game of Thrones";
+  font-size: 15px;
+}

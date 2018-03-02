@@ -14,12 +14,6 @@ var InstructionComponent = (function () {
     function InstructionComponent(router) {
         this.router = router;
     }
-    InstructionComponent.prototype.ngOnInit = function () {
-        this.token = localStorage.getItem('token');
-        if (!this.token) {
-            this.router.navigate(['login']);
-        }
-    };
     return InstructionComponent;
 }());
 InstructionComponent = __decorate([

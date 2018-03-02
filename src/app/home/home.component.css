@@ -1,101 +1,7 @@
-
-/*
-.app-content {
-  padding: 20px;
+@font-face {
+  font-family: 'Game of Thrones';
+  src:  url('src/assets/skins/lightgray/fonts/got.ttf');
 }
-
-.app-content md-card {
-  margin: 20px;
-}
-
-.app-content md-checkbox {
-  margin: 10px;
-}
-
-.app-toolbar-filler {
-  flex: 1 1 auto;
-}
-
-.app-toolbar-menu {
-  padding: 0 14px 0 14px;
-  color: white;
-}
-
-.app-icon-button {
-  box-shadow: none;
-  user-select: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  filter: none;
-  font-weight: normal;
-  height: auto;
-  line-height: inherit;
-  margin: 0;
-  min-width: 0;
-  padding: 0;
-  text-align: left;
-  text-decoration: none;
-}
-
-.app-action {
-  display: inline-block;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.app-spinner {
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-}
-
-.app-input-icon {
-  font-size: 16px;
-}
-
-.app-list {
-  border: 1px solid rgba(0,0,0,0.12);
-  width: 350px;
-  margin: 20px;
-}
-
-.app-progress {
-  margin: 20px;
-}
-.header{
-  color: white;
-  padding-left: 18px;
-  font-size: 19px;
-}
-
-.list-color{
-  color: white;
-  transition: color 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
-}
-
-md-list-item a {
-  text-decoration: none;
-  color: white;
-}
-
-.name-display{
-  margin-right: 790px;
-}
-
-.logo {
-  position: relative; 
-  left: -6px;
-  top: 5px;
-}
-
-.log-out{
-  margin-left: 11px;
-  position: relative;
-  top: 5px;
-}  */
-
 
 
 md-sidenav-layout.school-app-dark {
@@ -118,7 +24,7 @@ md-list-item a {
 .app-sidenav {
   padding: 10px;
   min-width: 100px;
-  background-color: #646b6f;
+  background-color: black;
   color: white;
 }
 
@@ -131,6 +37,7 @@ md-list-item a {
 }
 
 .app-toolbar-menu {
+
   padding: 0 14px 0 14px;
   color: white;
 }
@@ -192,8 +99,10 @@ md-list-item a {
   height: 120px;
 }
 .list-color{
+  font-family: 'Game of Thrones';
   color: white;
   transition: color 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+
 }
 
 .log-out {
@@ -203,11 +112,5 @@ md-list-item a {
 }
 
 .sidebar {
-  background-image: url('src/assets/img/login1.png')
+  background-image: url('src/assets/img/login11.jpg')
 }
-
-/*.app {
-  background-image: url("src/assets/img/back4.jpg"); 
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}*/

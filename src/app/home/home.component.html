@@ -1,23 +1,9 @@
-  <!--<md-toolbar color="primary" layout="row" layout-align="end start"> 
-    <span class = 'name-display'>  <i class="material-icons logo">account_circle</i>{{ name }} </span>
-     <md-list-item class="list-color">
-       <a routerLink="instruction"> Instruction </a>
-       <a style = "margin-left: 10px" [routerLink] ="['question', user_id]"> Question </a>
-       <a style = "margin-left: 13px" routerLink="leaderboard"> Leaderboard  </a>
-       <button class="app-icon-button" (click) = "logout()"><i class="material-icons log-out">exit_to_app</i></button>
-     </md-list-item>
-  </md-toolbar>
-  <div class="app-content" style = "background-color:rgba(158, 158, 158, 0.2);">
-    <router-outlet>
-    </router-outlet>
-  </div>
--->
-
+<body>
 <md-sidenav-layout style = "height:100%;">
-  <md-sidenav #sidenav mode="side" [opened]="true" class="app-sidenav sidebar">
+  <md-sidenav #sidenav mode="side" [opened]="false" class="app-sidenav sidebar">
     <md-list>
       <md-list-item class="avatar-list">
-        <img src="src/assets/img/logo.jpg" class="md-avatar main-avatar" alt="User Name"/>
+        <img style="margin-top: 80px" src="src/assets/img/AavishkarLogo.jpg" class="md-avatar main-avatar" alt="User Name"/>
       </md-list-item>
       <md-list-item >
         <strong class="header">  {{name}} </strong>
@@ -25,22 +11,22 @@
       </md-list>
       <md-list style="cursor:pointer">
       <md-divider></md-divider>
-      <md-list-item (click) = "text(1)" class="list-color">
-        <a routerLink="instruction"> Instruction </a> 
+      <md-list-item (click) = "text(1)" >
+        <a class="list-color" routerLink="instruction"> Instruction </a> 
       </md-list-item>
-      <md-list-item (click) = "text(2)" class="list-color">
-        <a> Question </a>
+      <md-list-item (click) = "text(2)" >
+        <a class="list-color"> Questions </a>
       </md-list-item>
-      <md-list-item (click) = "text(3)" class="list-color">
-        <a routerLink="leaderboard"> Leaderboard  </a>
+      <md-list-item (click) = "text(3)" >
+        <a class="list-color" routerLink="leaderboard"> Leaderboard  </a>
       </md-list-item>
-       <md-list-item class="list-color">
+       <md-list-item >
           <div class="list-color" (click) = "logout()"> Logout </div>
       </md-list-item>
       </md-list>
   </md-sidenav>
 
-  <md-toolbar color="primary" style = "background-color:black" >
+  <md-toolbar class="list-color" color="primary" style = "background-color:black" >
     <button class="app-icon-button" (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
@@ -57,4 +43,4 @@
 
 
 </md-sidenav-layout>
-
+</body>

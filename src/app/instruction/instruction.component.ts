@@ -16,11 +16,11 @@ export class InstructionComponent implements OnInit {
 
   private token;
 
-  ngOnInit() {
+  /*ngOnInit() {
     this.token = localStorage.getItem('token');
     if(!this.token) {
       this.router.navigate(['login']);  
-    }
+    }*/
   }
 }
 

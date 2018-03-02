@@ -1,5 +1,302 @@
-.inst {
-    background-color: rgb(18,18,18);
-    background-size: 100vw 100vh;
-    height: 44em;
+body {
+  background: #D8C0A9;
+}
+#pour {
+  width: 4px;
+  background: #E2B90E;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  margin-left: -2px;
+  animation: pourit 20s infinite;
+}
+#clip {
+  width: 600px;
+  height: 600px;
+  border: 5px solid #231F20;
+  background: #231F20;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px auto 0 auto;
+  position: relative;
+  animation: spin 20s infinite;
+}
+#clip #block {
+  z-index: 2;
+  width: 250px;
+  height: 250px;
+  display: block;
+  background: #231F20;
+  position: relative;
+  margin: 107px auto 0 auto;
+  animation: fillit 20s infinite;
+}
+#arm {
+  width: 170px;
+  height: 220px;
+  background: #96651E;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -85px;
+}
+#wrist {
+  width: 122px;
+  height: 33px;
+  background: #D6B994;
+  position: absolute;
+  bottom: 220px;
+  left: 50%;
+  margin-left: -61px;
+}
+#wrist:after {
+  content: '';
+  width: 26px;
+  height: 5px;
+  background: #EAEAEA;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  left: 50%;
+  margin: -13px 0 0 -13px;
+  animation: goldcut 20s infinite;
+}
+#wrist:before {
+  content: '';
+  width: 122px;
+  height: 20px;
+  background: #EF5273;
+  border-radius: 50%;
+  display: block;
+  margin-top: -10px;
+  animation: goldcut 20s infinite;
+}
+#hand-container {
+  height: 223px;
+  width: 206px;
+  position: absolute;
+  z-index: 1;
+  margin-left: -120px;
+  bottom: 240px;
+  left: 50%;
+  animation: chopchop 20s ease infinite;
+}
+#hand-container #palm {
+  width: 158px;
+  height: 145px;
+  background: #E2C79F;
+  position: absolute;
+  right: 6px;
+  bottom: 0;
+  border-radius: 10%;
+  animation: colorswaplight 20s infinite;
+}
+#hand-container #thumb {
+  width: 40px;
+  height: 90px;
+  background: #D6B994;
+  border-radius: 40%;
+  transform: rotate(-40deg);
+  position: absolute;
+  left: 14px;
+  bottom: 0;
+  animation: colorswap 20s infinite;
+}
+#hand-container .finger {
+  background: #D6B994;
+  width: 41px;
+  border-radius: 40%;
+  position: absolute;
+  animation: colorswap 20s infinite;
+}
+#hand-container .finger:before {
+  content: '';
+  height: 25px;
+  width: 22px;
+  display: block;
+  border-radius: 40%;
+  background: white;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -11px;
+  opacity: 0.2;
+  animation: colorswap 20s infinite;
+}
+#hand-container .one {
+  height: 85px;
+  top: 40px;
+  left: 38px;
+}
+#hand-container .two {
+  height: 100px;
+  top: 30px;
+  left: 80px;
+}
+#hand-container .three {
+  height: 85px;
+  top: 40px;
+  left: 122px;
+}
+#hand-container .four {
+  height: 70px;
+  top: 50px;
+  right: 1px;
+}
+@keyframes chopchop {
+  0% {
+    bottom: 240px;
+    left: 50%;
+  }
+  5% {
+    bottom: 300px;
+    left: 50%;
+  }
+  18% {
+    bottom: 300px;
+    left: -500px;
+  }
+  19% {
+    bottom: 240px;
+    left: 50%;
+  }
+  100% {
+    bottom: 240px;
+    left: 50%;
+  }
+}
+@keyframes colorswap {
+  15% {
+    background: #95B550;
+  }
+  16% {
+    background: #231F20;
+  }
+  19% {
+    background: #231F20;
+  }
+  21% {
+    background: #EAC324;
+  }
+  100% {
+    background: #EAC324;
+  }
+}
+@keyframes colorswaplight {
+  15% {
+    background: #95B246;
+  }
+  16% {
+    background: #231F20;
+  }
+  19% {
+    background: #231F20;
+  }
+  21% {
+    background: #E2B90E;
+  }
+  100% {
+    background: #E2B90E;
+  }
+}
+@keyframes fillit {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  20% {
+    height: 250px;
+  }
+  80% {
+    height: 50px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+@keyframes pourit {
+  0% {
+    height: 0px;
+    margin-top: 0;
+  }
+  10% {
+    height: 0px;
+    margin-top: 0;
+  }
+  18% {
+    height: 357px;
+    margin-top: 0;
+  }
+  40% {
+    height: 357px;
+    margin-top: 0;
+  }
+  60% {
+    height: 357px;
+    margin-top: 0;
+  }
+  61% {
+    margin-top: 100px;
+    height: 10px;
+  }
+  70% {
+    height: 0px;
+    margin-top: 999px;
+  }
+  100% {
+    height: 0px;
+    margin-top: 999px;
+  }
+}
+@keyframes goldcut {
+  14% {
+    background: #231F20;
+  }
+  100% {
+    background: #231F20;
+  }
+}
+@keyframes spin {
+  5% {
+    transform: rotate(90deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@font-face {
+  font-family: 'Game of Thrones';
+  src:  url('src/assets/skins/lightgray/fonts/got.ttf');
+}
+
+
+
+
+
+
+/* ----- Line of text ------ */
+p,
+a {
+  font-family: 'Game of Thrones';
+  font-weight: 300;
+  color: #9B5F5F;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin-top: 40px;
 }

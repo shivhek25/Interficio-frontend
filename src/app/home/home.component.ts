@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   private name;
   private header = 'Instruction';
 
-  ngOnInit() {
+  /*ngOnInit() {
       this.registerService.getUserDetail()
       .then (res => {
         console.log("res--",res);
@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
 
        })
       .catch(error => console.log("error--",error))
-  }
+  }*/
 
   logout() {
     console.log('asdf');

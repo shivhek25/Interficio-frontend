@@ -16,8 +16,8 @@
  </md-card-content>
 </md-card>
 
-<p class = "hint"> we have some questions for you that will help you in decoding the answer. </p>
-
+<p class = "name"> we have some questions for you that will help you in decoding the answer. </p>
+ 
 <md-card *ngFor = "let question of questionObj" class = "card" style = "margin-top:15px;width:90%;margin-left: 3%;">
   <md-card-content>
     <p class = "desc" [innerHTML] = "question.description"></p>
@@ -31,7 +31,3 @@
   </md-card-content>
 </md-card>
 </div>
-
-
-
-

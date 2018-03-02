@@ -17,24 +17,23 @@ var HomeComponent = (function () {
         this.registerService = registerService;
         this.header = 'Instruction';
     }
-    HomeComponent.prototype.ngOnInit = function () {
-        var _this = this;
+    /*ngOnInit() {
         this.registerService.getUserDetail()
-            .then(function (res) {
-            console.log("res--", res);
-            if (res.not_verified) {
-                _this.router.navigate(['login']);
-            }
-            else {
-                _this.user_id = res.data.user_id;
-                console.log(typeof (_this.user_id));
-                _this.name = res.data.user_name;
-                // localStorage.setItem('user_id',this.user_id);
-                console.log(_this.user_id, _this.name);
-            }
-        })
-            .catch(function (error) { return console.log("error--", error); });
-    };
+        .then (res => {
+          console.log("res--",res);
+          if(res.not_verified) {
+            this.router.navigate(['login']);
+          } else {
+            this.user_id = res.data.user_id;
+            console.log(typeof(this.user_id));
+            this.name = res.data.user_name;
+            // localStorage.setItem('user_id',this.user_id);
+            console.log(this.user_id,this.name);
+          }
+  
+         })
+        .catch(error => console.log("error--",error))
+    }*/
     HomeComponent.prototype.logout = function () {
         console.log('asdf');
         localStorage.setItem('token', '');

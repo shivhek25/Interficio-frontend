@@ -31,7 +31,7 @@ export class QuestionComponent implements OnInit {
   private user_id;
   private token;
 
-  ngOnInit() {
+  /*ngOnInit() {
 
     this.token = localStorage.getItem('token');
       if(!this.token) {
@@ -56,7 +56,7 @@ export class QuestionComponent implements OnInit {
       .catch( this.handleError );
 
     // this._flashMessagesService.show('We are in about component!', { timeout: 1000 });
-  }
+  }*/
  
   onAnswerSubmit(form_data, id) {
     this.question_id = id;
